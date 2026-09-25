@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: octopus
+    runtime: docker
+    repo: https://github.com/Kiyoscripts/octopus.git
+    plan: free
+    envVars:
+      - key: OCTOPUS_SERVER_PORT
+        value: 10000
